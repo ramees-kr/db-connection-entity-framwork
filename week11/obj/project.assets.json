@@ -4113,11 +4113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\week11\\week11.csproj",
+      "projectUniqueName": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\db-connection-entity-framwork\\week11\\week11.csproj",
       "projectName": "week11",
-      "projectPath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\week11\\week11.csproj",
+      "projectPath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\db-connection-entity-framwork\\week11\\week11.csproj",
       "packagesPath": "C:\\Users\\ramee\\.nuget\\packages\\",
-      "outputPath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\week11\\obj\\",
+      "outputPath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\db-connection-entity-framwork\\week11\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qhmc4C9VHRU+jWMP55sudeG1270WiRD+CDhmapbz6jutNe5VlEn7r5DGBI0E9aYhIMzeKSndQmeX2ag5CvvyaA==",
+  "dgSpecHash": "25VFk8txC35FOWfafK90cguBAeQH9jYcxxxK0gYeEQDyIvaoEgdFYJ7iFL2qzl1irRCiwpI2G+kY4jH8sIjbiw==",
   "success": true,
-  "projectFilePath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\week11\\week11.csproj",
+  "projectFilePath": "D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\db-connection-entity-framwork\\week11\\week11.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramee\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ramee\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
