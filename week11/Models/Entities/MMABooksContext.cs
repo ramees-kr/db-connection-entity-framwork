@@ -28,10 +28,24 @@ public partial class MMABooksContext : DbContext
 
     public virtual DbSet<State> States { get; set; }
 
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-         => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename='D:\\ITS\\OneDrive - Humber College\\Semester 2\\ITE-5230-IRA-Application Dev using C#.Net\\ClassSandbox\\week11\\Week11.EF\\db-connection-entity-framwork\\week11\\MMABooks.mdf';Integrated Security=True;Connect Timeout=30;Encrypt=True");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            // Get the directory where the executable is located
+            string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+            Console.WriteLine(executableLocation);
+
+            // Construct the relative path to the database file
+            string relativePath = @"..\..\..\MMABooks.mdf"; // Adjust the number of '..\' segments based on your project structure
+
+            // Combine the executable location and relative path to get the full path to the database file
+            string fullPath = Path.GetFullPath(Path.Combine(executableLocation, relativePath));
+            Console.WriteLine(fullPath);
+            // Use the full path in the connection string
+            optionsBuilder.UseSqlServer($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={fullPath};Integrated Security=True");
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
