@@ -34,14 +34,14 @@ public partial class MMABooksContext : DbContext
         {
             // Get the directory where the executable is located
             string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
-            Console.WriteLine(executableLocation);
+            //Console.WriteLine(executableLocation);
 
             // Construct the relative path to the database file
             string relativePath = @"..\..\..\MMABooks.mdf"; // Adjust the number of '..\' segments based on your project structure
 
             // Combine the executable location and relative path to get the full path to the database file
             string fullPath = Path.GetFullPath(Path.Combine(executableLocation, relativePath));
-            Console.WriteLine(fullPath);
+            //Console.WriteLine(fullPath);
             // Use the full path in the connection string
             optionsBuilder.UseSqlServer($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={fullPath};Integrated Security=True");
         }
