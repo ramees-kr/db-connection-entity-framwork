@@ -1,5 +1,3 @@
-Thank you for clarifying. Below is the updated README markdown with the MIT license information:
-
 ---
 
 # Week11.Lab - MMABooks Customer Viewer
